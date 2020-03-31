@@ -20,12 +20,12 @@ template<class T> using oset=tree<T,null_type,less<T>,rb_tree_tag,tree_order_sta
 #define     pii         pair<int,int>
 #define     all(x)      x.begin(),x.end()
 #define     fix         fixed<<setprecision(10)
-#define     setbits(x)  __builtin_popcountll(x)
 #define     rep(i,a,b)  for(int i=int(a);i<=int(b);i++)
 #define     repb(i,b,a) for(int i=int(b);i>=int(a);i--)
 #define     FastIO      ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 
-struct custom_hash {        // unordered_map<int,int,custom_hash>
+struct custom_hash {        
+    // unordered_map<int,int,custom_hash>
     static uint64_t splitmix64(uint64_t x) {
         x += 0x9e3779b97f4a7c15;
         x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
