@@ -22,7 +22,7 @@ template<class T> using oset=tree<T,null_type,less<T>,rb_tree_tag,tree_order_sta
 #define     fix         fixed<<setprecision(10)
 #define     rep(i,a,b)  for(int i=int(a);i<=int(b);i++)
 #define     repb(i,b,a) for(int i=int(b);i>=int(a);i--)
-#define     FastIO      ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
+#define     FastIO      ios_base::sync_with_stdio(0),cin.tie(0)
 
 struct custom_hash {        // unordered_map<int,int,custom_hash>
     static uint64_t splitmix64(uint64_t x) {
@@ -37,7 +37,7 @@ struct custom_hash {        // unordered_map<int,int,custom_hash>
     }
 };
 
-struct comp{            // custom compare function
+struct comp{        // custom compare function
     bool operator()(pii a,pii b){
 
     }
@@ -45,14 +45,14 @@ struct comp{            // custom compare function
 
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 int getrand(int a,int b){
-    uniform_int_distribution<int> uid(a,b);
+    uniform_int_distribution<int>uid(a,b);
     return uid(rng);
 }
 
 typedef double db;
 typedef long long ll;
 
-const int N=1e5+5;
+const int N=2e5+5;
 const int mod=1e9+7;
 
 signed main(){
