@@ -17,6 +17,7 @@ template<class T> using oset=tree<T,null_type,less<T>,rb_tree_tag,tree_order_sta
 #define     pb          push_back
 #define     lb          lower_bound
 #define     ub          upper_bound
+#define     vi          vector<int>
 #define     pii         pair<int,int>
 #define     all(x)      x.begin(),x.end()
 #define     fix         fixed<<setprecision(10)
@@ -67,5 +68,3 @@ signed main(){
 //    cout<<"Time elapsed: "<<fix<<time_taken<<"s"<<'\n';
     return 0;
 }
-
-
