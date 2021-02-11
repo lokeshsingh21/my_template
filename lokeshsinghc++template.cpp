@@ -18,7 +18,6 @@ template<class T> using oset=tree<T,null_type,less<T>,rb_tree_tag,tree_order_sta
 #define     lb          lower_bound
 #define     ub          upper_bound
 #define     vi          vector<int>
-#define     pii         pair<int,int>
 #define     all(x)      x.begin(),x.end()
 #define     fix         fixed<<setprecision(10)
 #define     rep(i,a,b)  for(int i=int(a);i<=int(b);i++)
