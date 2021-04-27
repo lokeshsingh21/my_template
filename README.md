@@ -1,2 +1,2 @@
 # my_template
-My sports programming c++ template
+My Competitive programming C++ template
